@@ -45,3 +45,6 @@ function formatTimestamp(timestamp, format) {
             return 'Invalid format';
     }
 }
+
+const currentYear = new Date().getFullYear();
+document.getElementById("currentYear").innerText = currentYear;

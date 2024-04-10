@@ -71,14 +71,6 @@ button:active {
     color: #333;
 }
 
-.footer {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    display: flex;
-    align-items: center;
-}
-
 .icon-large {
     font-size: 27px;
     color: #333;
@@ -88,4 +80,23 @@ button:active {
 
 .icon-large:hover {
     color: #666;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: green;
 }
