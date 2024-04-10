@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Convert timestamps to Discord format easily.">
+        <meta name="keywords" content="discord, timestamp, converter, timestamp converter, discord timestamp converter">
+        <meta name="author" content="n0step_">
+        <meta name="robots" content="index, follow">
+        <title>Discord Timestamp Converter</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    
+<body>
+    <div class="container">
+        <h1>Discord Timestamp Converter</h1>
+        <div class="input-container">
+            <div>
+                <label for="date">Date:</label>
+                <input type="text" id="date" class="date-input">
+            </div>
+            <div>
+                <label for="time">Time:</label>
+                <input type="text" id="time" class="time-input">
+            </div>
+            <div>
+                <label for="format">Select Format:</label>
+                <select id="format">
+                    <option value="D">Month/Day/Year</option>
+                    <option value="F">Month Day, Year Time</option>
+                    <option value="t">Time</option>
+                    <option value="d">Month Day, Year</option>
+                    <option value="R">Time since</option>
+                    <option value="H">Hours:Minutes:Seconds</option>
+                </select>
+            </div>
+            <button onclick="convertDateTimeToTimestamp()">Convert</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <div class="footer">
+        <a href="https://github.com/krushna06/discord-unix"><i class="fab fa-github icon-large"></i></a>
+        <a href="https://discord.gg/vG97hWfPrP"><i class="fab fa-discord icon-large"></i></a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+    <style>
+        .icon-large {
+            font-size: 27px;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .icon-large:hover {
+            color: #666;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+        }
+    </style>
+</body>
+</html>
