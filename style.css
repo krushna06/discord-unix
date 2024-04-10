@@ -46,13 +46,6 @@ select {
     padding-left: 40px;
 }
 
-.material-icons {
-    position: absolute;
-    margin: 15px;
-    font-size: 24px;
-    color: #999;
-}
-
 button {
     padding: 12px 24px;
     background-color: #007bff;
@@ -81,17 +74,18 @@ button:active {
 .footer {
     position: fixed;
     bottom: 10px;
-    left: 20px;
+    left: 10px;
     display: flex;
     align-items: center;
 }
 
-.footer a {
-    margin-right: 10px;
-    text-decoration: none;
+.icon-large {
+    font-size: 27px;
     color: #333;
+    transition: color 0.3s ease;
+    margin-right: 7px;
 }
 
-.material-icons {
-    font-size: 24px;
+.icon-large:hover {
+    color: #666;
 }
